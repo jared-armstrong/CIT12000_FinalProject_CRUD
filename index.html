@@ -1,0 +1,52 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+
+    <style>
+        header {
+            height: 50px;
+            font-size:200%;
+            background-color: blanchedalmond;
+            text-align: center;
+        }
+        .wrapper {
+            margin-top: 16px;
+            display: flex;
+            gap: 50px;
+        }
+        .list-all {
+            background-color: beige;
+            padding: 15px;
+        }
+        .menu {
+            background-color: lemonchiffon;
+            padding: 15px;
+        }
+    </style>
+</head>    
+    <header>Jared's Food Site</header>
+    <div class="wrapper">
+        <div class="myList">
+          <button onclick ="listMenuItems()">Show Original Menu</button>
+        </div>
+        <div class="menu">
+            <p>
+                <label for="choice">What would you like to do?</label>
+                <ul>
+                     <li>Create a Menu Item - C</li>
+                     <li>Read the details for a Menu Item - R</li>
+                     <li>Update the details for a Menu Item - U</li>
+                     <li>Delete a Menu Item - D</li>
+                </ul>
+                <input type="text" id="choice" maxlength="15" size="15">
+                <button onclick="act()">Submit your choice of action</button>
+            </p>
+            <p class="info"></p>
+        </div>
+    </div>
+    </body>
+    </html>
